@@ -7,8 +7,8 @@ I used Nextjs for SSR and expressjs for Server. Reactjs for UI rendering and for
 For testing I used Jest, Enzyme and React test renderer (react-test-renderer)
 
 I have tested the code and have covered these two types of tests :
-Acceptance testing - End to end app testing, by simulating user interactions or experience
-Unit testing - testing for components (snapshot testing) and store's actions and reducers
+- Acceptance testing - End to end app testing, by simulating user interactions or experience
+- Unit testing - testing for components (snapshot testing) and store's actions and reducers
 
 ## How to use
 
