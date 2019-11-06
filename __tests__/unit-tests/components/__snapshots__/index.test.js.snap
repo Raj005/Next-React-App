@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image component matches the snapshot 1`] = `
+<img
+  className="style__Image-l8s0xg-0 kpdFLk"
+/>
+`;
+
+exports[`ModalImageComponent component matches the snapshot 1`] = `
+<div>
+  <img
+    className="smallImage"
+    onClick={[Function]}
+    srcSet="undefined 375w, undefined 768w, undefined 1200w"
+    style={
+      Object {
+        "cursor": "pointer",
+        "maxHeight": "100%",
+        "maxWidth": "100%",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`ResponsiveImageContainer component matches the snapshot 1`] = `
+<div
+  className="style__ResponsiveImageWrapper-sc-11rzwhz-0 eRvRBP"
+/>
+`;
