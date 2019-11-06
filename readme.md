@@ -3,7 +3,7 @@
 I focused more on Architecture and Design for creating a scalable and maintainable performant app. I used design patterns like design by composition, Dependency Injection and Solid principles. Components follow the Pod structure (all related files in one place) and also I preferred SSR (Server side rendering) because it is more performant than CSR and also SEO, SEM, and conversion rate depend on it.
 
 Tech stack -
-I used Nextjs for SSR and expressjs for Server. Reactjs for UI rendering and for styling I used styled components
+I used Nextjs for SSR and expressjs for Server. Reactjs for UI rendering and for styling I used styled components.
 For testing I used Jest, Enzyme and React test renderer (react-test-renderer)
 
 I have tested the code and have covered these two types of tests :
