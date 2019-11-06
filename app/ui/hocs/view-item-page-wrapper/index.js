@@ -4,19 +4,14 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
 import { mapStateToProps } from './reduxMethods';
-import Router from 'next/router';
+
+import * as thunks from '../../../store/thunks';
 
 export default ChildComponent => {
-  class HomePageWrapper extends React.Component {
-    static async getInitialProps({ res }) {
-      if (res) {
-        res.writeHead(302, {
-          Location: '/car'
-        });
-        res.end();
-      } else {
-        Router.push('/car');
-      }
+  class ViewItemPageWrapper extends React.Component {
+    static async getInitialProps({ store, query }) {
+      const { id } = query;
+      await store.dispatch(thunks.getCarById(id));
       return {};
     }
 
@@ -25,9 +20,11 @@ export default ChildComponent => {
     }
   }
 
-  HomePageWrapper.propTypes = {};
+  ViewItemPageWrapper.propTypes = {
+    car: PropTypes.object.isRequired
+  };
 
   return withRouter(
-    connect(mapStateToProps)(hoistStatics(HomePageWrapper, ChildComponent))
+    connect(mapStateToProps)(hoistStatics(ViewItemPageWrapper, ChildComponent))
   );
 };

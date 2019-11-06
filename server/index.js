@@ -12,7 +12,7 @@ app.prepare().then(() => {
 
   server.use('/public', express.static('public'));
 
-  server.use('/api/car', carsRoute);
+  server.use('/api/cars', carsRoute);
 
   server.get('*', (req, res) => {
     return handle(req, res);

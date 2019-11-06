@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
 
-import car from './car';
+import cars from './cars';
 
-export default combineReducers({ car });
+export default combineReducers({ cars });

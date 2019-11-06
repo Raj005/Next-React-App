@@ -1,3 +1,4 @@
-const getCarHandler = require('./getCarHandler');
+const getCarsHandler = require('./getCarsHandler');
+const getCarByIdHandler = require('./getCarByIdHandler');
 
-module.exports = { getCarHandler };
+module.exports = { getCarsHandler, getCarByIdHandler };

@@ -1,3 +1,3 @@
-import { carFetched, CAR_FETCHED } from './car';
+import { carFetched, CAR_FETCHED, carsFetched, CARS_FETCHED } from './cars';
 
-export { carFetched, CAR_FETCHED };
+export { carFetched, CAR_FETCHED, carsFetched, CARS_FETCHED };

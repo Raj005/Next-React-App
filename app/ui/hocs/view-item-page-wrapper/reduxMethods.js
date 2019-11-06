@@ -1,6 +1,6 @@
 const mapStateToProps = state => {
   return {
-    cars: state.cars
+    car: state.cars.data
   };
 };
 export { mapStateToProps };

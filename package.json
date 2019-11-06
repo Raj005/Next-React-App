@@ -21,6 +21,7 @@
     "polished": "3.4.2",
     "react": "16.11.0",
     "react-dom": "16.11.0",
+    "react-modal-image": "2.5.0",
     "react-redux": "7.1.1",
     "redux": "4.0.4",
     "redux-devtools-extension": "2.13.8",
